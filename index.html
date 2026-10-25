@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Raymund Batandolo — IT Student &amp; Aspiring Developer</title>
+  <meta name="description" content="Portfolio of John Raymund Batandolo, an Information Technology student at Cebu Eastern College interested in software development, web applications, AI, and game development.">
+  <meta name="author" content="John Raymund Batandolo">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Raymund Batandolo — IT Student &amp; Aspiring Developer">
+  <meta property="og:description" content="Projects in web development, AI, and game development by an IT student at Cebu Eastern College.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Apply the saved theme before the page paints (avoids a light/dark flash) -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <span class="brand-text">John Raymund</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-sm nav-cta" href="contact.html">Say hello</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> IT student &middot; Cebu Eastern College</p>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent-italic">John Raymund</span> — an IT student who learns by building.
+          </h1>
+
+          <p class="hero-lead">
+            I'm an Information Technology student interested in software development, web applications,
+            artificial intelligence, and game development. I enjoy turning ideas into functional projects,
+            exploring new technologies, and learning through hands-on experience.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="projects.html">
+              Explore my projects
+              <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+
+          <dl class="hero-meta">
+            <div>
+              <dt>Currently learning</dt>
+              <dd>Web apps, AI &amp; games</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Cebu City, Philippines</dd>
+            </div>
+            <div>
+              <dt>Goal</dt>
+              <dd>Software developer</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="portrait-card">
+            <img src="images/profile.jpg" alt="Portrait of John Raymund Batandolo" width="960" height="960">
+            <figcaption>
+              <span class="portrait-name">John Raymund Batandolo</span>
+              <span class="portrait-role">BSIT Student &middot; Aspiring Developer</span>
+            </figcaption>
+          </figure>
+
+          <div class="floating-card" aria-hidden="true">
+            <span class="floating-card-label">Latest build</span>
+            <strong>UniMart</strong>
+            <span class="floating-card-meta">Django &middot; Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RIGHT NOW ================= -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Right now</p>
+          <h2 class="section-title">Currently learning. Constantly building. Always improving.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 6 3 12l5 6M16 6l5 6-5 6"/></svg>
+            </span>
+            <h3>Currently learning</h3>
+            <p>Strengthening my programming fundamentals, improving my web development skills, and exploring AI integration and interactive game systems.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+            </span>
+            <h3>Constantly building</h3>
+            <p>Academic work so far includes a Django campus marketplace, a Godot horror prototype, and an AI career-assessment concept.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+            </span>
+            <h3>Always improving</h3>
+            <p>I learn through practice, experimentation, and honest feedback — then carry those lessons into the next project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS ================= -->
+    <section class="section section-alt" id="featured">
+      <div class="container">
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section-title">Projects I've built while learning</h2>
+          </div>
+          <a class="link-arrow" href="projects.html">
+            All projects
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="project-card reveal">
+            <a class="project-media" href="projects.html#unimart" aria-label="UniMart project details">
+              <img src="images/project-1.png" alt="Placeholder image for the UniMart project" width="800" height="520" loading="lazy">
+            </a>
+            <div class="project-body">
+              <div class="project-topline">
+                <h3><a href="projects.html#unimart">UniMart</a></h3>
+                <span class="project-year">Academic project</span>
+              </div>
+              <p>A campus marketplace where students can list, search, and buy or sell items within their school community.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">Django</li>
+                <li class="tag">Python</li>
+                <li class="tag">Tailwind CSS</li>
+                <li class="tag">MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-media" href="projects.html#honey-im-home" aria-label="Honey, I'm Home project details">
+              <img src="images/project-2.jpg" alt="Honey, I'm Home title screen" width="1600" height="900" loading="lazy">
+            </a>
+            <div class="project-body">
+              <div class="project-topline">
+                <h3><a href="projects.html#honey-im-home">Honey, I'm Home</a></h3>
+                <span class="project-year">Prototype</span>
+              </div>
+              <p>A first-person psychological horror game: complete tasks, solve puzzles, and avoid a stalker inside a low-poly house.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">Godot</li>
+                <li class="tag">GDScript</li>
+                <li class="tag">3D</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-media" href="projects.html#career-assessment" aria-label="AI Career Assessment project details">
+              <img src="images/project-3.png" alt="Placeholder image for the AI career assessment project" width="800" height="520" loading="lazy">
+            </a>
+            <div class="project-body">
+              <div class="project-topline">
+                <h3><a href="projects.html#career-assessment">AI Career Assessment</a></h3>
+                <span class="project-year">In progress</span>
+              </div>
+              <p>A research project exploring how AI can suggest IT career paths from a student's interests, skills, and knowledge.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">AI</li>
+                <li class="tag">Research</li>
+                <li class="tag">Requirements</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT PREVIEW ================= -->
+    <section class="section">
+      <div class="container about-preview">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2 class="section-title">A student developer with a lot still to learn.</h2>
+        </div>
+        <div class="about-preview-body reveal">
+          <p>
+            I'm a Bachelor of Science in Information Technology student at Cebu Eastern College.
+            My coursework has covered web application development, database management, and 3D game
+            development — and each project has taught me something the previous one didn't.
+          </p>
+          <p>
+            I'm most interested in building useful web applications, exploring AI-powered systems, and
+            creating interactive experiences through game development. I'd rather ship something small
+            and real than describe something big and imaginary.
+          </p>
+          <a class="link-arrow" href="about.html">
+            More about me &amp; my skills
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Have an idea, a project, or a question?</h2>
+            <p>I'm happy to talk about technology, collaborate on something small, or hear feedback on my work.</p>
+          </div>
+          <a class="btn btn-invert" href="contact.html">
+            Contact me
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <p>Built with HTML, CSS, and JavaScript.<br>Published with GitHub Pages.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; <span id="year">2026</span> John Raymund Batandolo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

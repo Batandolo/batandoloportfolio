@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — John Raymund Batandolo</title>
+  <meta name="description" content="Contact John Raymund Batandolo, an IT student at Cebu Eastern College, for project questions, collaboration, or internship opportunities.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <span class="brand-text">John Raymund</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-sm nav-cta" href="contact.html">Say hello</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1 class="page-title">Let's <span class="accent-italic">connect.</span></h1>
+        <p class="page-lead">
+          I'm always interested in connecting with people who share an interest in technology,
+          software development, and creative projects. Whether it's discussing an idea, collaborating
+          on a project, or sharing knowledge, I'd be happy to connect.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- ============ DIRECT CONTACT ============ -->
+        <div class="contact-details reveal">
+          <h2 class="column-title">Direct contact</h2>
+
+          <a class="email-card" href="mailto:batandoloj@gmail.com">
+            <span class="email-card-label">Email</span>
+            <span class="email-card-value">batandoloj@gmail.com</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          </a>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list-label">Location</span>
+              <span>Cebu City, Philippines &middot; PHT (UTC+8)</span>
+            </li>
+            <li>
+              <span class="contact-list-label">Availability</span>
+              <span>Open to internships, collaboration, and feedback</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ============ FORM ============ -->
+        <div class="contact-form-wrap reveal">
+          <h2 class="column-title">Send a message</h2>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+            </div>
+
+            <div class="field">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="Project question">Project question</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Internship">Internship opportunity</option>
+                <option value="Feedback">Feedback on the site</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Hi John, I saw your portfolio and wanted to ask about…"></textarea>
+            </div>
+
+            <button class="btn btn-full" type="submit">
+              Open in email app
+              <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </button>
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+            <p class="form-hint">
+              This form does not send messages from the website. It opens your own email app with the
+              message filled in, so you can review it and press send. That keeps the site free to host
+              and means no personal data is stored anywhere.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Before you write</p>
+          <h2 class="section-title">Quick answers</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <h3>Are you open to internships?</h3>
+            <p>Yes. I'm looking for opportunities where I can learn, contribute, and gain practical experience while I finish my degree.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Can I see your code?</h3>
+            <p>The projects page has write-ups and screenshots. Message me if you'd like a repository link or a walkthrough of how something was built.</p>
+          </article>
+          <article class="card reveal">
+            <h3>What are you working on now?</h3>
+            <p>UniMart's remaining features and the research behind the AI-powered IT career assessment system.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <p>Built with HTML, CSS, and JavaScript.<br>Published with GitHub Pages.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; <span id="year">2026</span> John Raymund Batandolo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About &amp; Skills — John Raymund Batandolo</title>
+  <meta name="description" content="Background, skills, and current learning goals of John Raymund Batandolo, a BS Information Technology student at Cebu Eastern College.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <span class="brand-text">John Raymund</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-sm nav-cta" href="contact.html">Say hello</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">About me</p>
+        <h1 class="page-title">An IT student who learns by <span class="accent-italic">building.</span></h1>
+        <p class="page-lead">
+          I'm a Bachelor of Science in Information Technology student at Cebu Eastern College
+          with an interest in software development and emerging technologies.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= BACKGROUND ================= -->
+    <section class="section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 class="column-title">My background</h2>
+        </div>
+        <div class="prose reveal">
+          <p>
+            Throughout my academic journey, I've worked on projects involving web application
+            development, database management, and 3D game development. These experiences have helped
+            me understand how applications are designed, developed, and improved through testing and
+            problem-solving.
+          </p>
+          <p>
+            I'm particularly interested in building useful web applications, exploring AI-powered
+            systems, and creating interactive experiences through game development. Most of what I
+            know came from class requirements that turned into something I actually wanted to finish.
+          </p>
+          <p>
+            As a student developer, I understand that there is still a lot to learn. I'm committed to
+            improving my technical knowledge, strengthening my problem-solving skills, and gaining
+            more practical experience through personal and academic projects.
+          </p>
+          <p>
+            I'd rather show a small, working project than describe a large, imaginary one — which is
+            exactly what the <a href="projects.html">projects page</a> is for.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">What I've actually used</h2>
+          <p class="section-sub">
+            Grouped by area, without percentages or rating bars. Each category lists the tools I've
+            used in coursework or personal projects, plus an honest note on what that experience
+            involved.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Programming Languages</h3>
+            <p class="skill-note">
+              Familiar with programming fundamentals and building basic application features.
+            </p>
+            <ul class="tag-list" aria-label="Programming languages">
+              <li class="tag">Python</li>
+              <li class="tag">PHP</li>
+              <li class="tag">C#</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Web Development</h3>
+            <p class="skill-note">
+              Experience developing academic web applications, working with databases, and
+              implementing CRUD operations.
+            </p>
+            <ul class="tag-list" aria-label="Web development tools">
+              <li class="tag">Django</li>
+              <li class="tag">Tailwind CSS</li>
+              <li class="tag">MySQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Game Development</h3>
+            <p class="skill-note">
+              Experience creating game environments, implementing gameplay features, and developing a
+              horror game prototype.
+            </p>
+            <ul class="tag-list" aria-label="Game development tools">
+              <li class="tag">Godot Engine</li>
+              <li class="tag">GDScript</li>
+              <li class="tag">3D Level Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Other Skills &amp; Interests</h3>
+            <p class="skill-note">
+              The habits and interests that support the technical work — especially during team
+              projects and research.
+            </p>
+            <ul class="tag-list" aria-label="Other skills and interests">
+              <li class="tag">Problem-Solving</li>
+              <li class="tag">Debugging</li>
+              <li class="tag">Teamwork</li>
+              <li class="tag">Requirements Analysis</li>
+              <li class="tag">AI Research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIMELINE ================= -->
+    <section class="section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 class="column-title">Education &amp; milestones</h2>
+        </div>
+        <ol class="timeline reveal">
+          <li>
+            <span class="timeline-date">2026 &mdash; present</span>
+            <h3>BS in Information Technology</h3>
+            <p>
+              Cebu Eastern College. Coursework in web application development, database management,
+              and 3D game development.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-date">Academic project</span>
+            <h3>UniMart</h3>
+            <p>
+              Built features for a Django campus marketplace, including listings, authentication,
+              search, and database operations.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-date">Prototype</span>
+            <h3>Honey, I'm Home</h3>
+            <p>
+              Developed a first-person horror game prototype in Godot with 3D level design, puzzles,
+              and a stalker encounter system.
+            </p>
+          </li>
+          <li>
+            <span class="timeline-date">Research</span>
+            <h3>AI-Powered IT Career Assessment System</h3>
+            <p>
+              Researching requirements and planning an AI system that connects student assessments
+              with IT career paths.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CURRENTLY LEARNING ================= -->
+    <section class="section section-alt">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">Always learning</p>
+          <h2 class="column-title">What I'm working on now</h2>
+        </div>
+        <div class="prose reveal">
+          <p>
+            I believe that improving as a developer takes practice, experimentation, and a
+            willingness to learn from mistakes.
+          </p>
+          <p>
+            I'm currently focused on strengthening my programming fundamentals, improving my web
+            development skills, exploring AI integration, and learning more about game systems and
+            interactive design.
+          </p>
+          <p>
+            Through academic projects and personal experiments, I aim to become more confident in
+            developing applications, solving technical problems, and turning ideas into working
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW THIS SITE WAS MADE ================= -->
+    <section class="section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 class="column-title">How this site was made</h2>
+        </div>
+        <div class="prose reveal">
+          <p>
+            This is a hand-written static site: plain HTML for structure, one CSS file for appearance,
+            and a small JavaScript file for the mobile menu, theme switch, and form behaviour. There is
+            no framework and no build step, so it can be published directly with GitHub Pages.
+          </p>
+          <p>
+            <strong>AI tools used:</strong> AI assistance was used for the initial layout, styling, and
+            JavaScript. Every section was reviewed, the content rewritten in my own words, and the
+            pages tested in a browser at desktop and phone widths. Update this note if you use
+            additional tools or a template.
+          </p>
+          <p>
+            <strong>Images:</strong> the illustration and project images in <code>images/</code> are
+            placeholders. They are replaced with real screenshots of the projects before publishing.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">JB</span>
+        <p>Built with HTML, CSS, and JavaScript.<br>Published with GitHub Pages.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-note">&copy; <span id="year">2026</span> John Raymund Batandolo</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
